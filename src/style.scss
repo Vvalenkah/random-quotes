@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    font-size: 30px;
+    font-family: 'IM Fell Double Pica', serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    // border:dotted 5px rgb(60, 60, 241);
+    align-items: center;
+}
+
+.change-btn {
+    font-family: 'IM Fell Double Pica', serif;
+    position: relative;
+    width: 205px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: solid 5px rgb(60, 60, 241);
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.5);
+    transition: .1s;
+    &:hover {
+        top: 2px;
+        left: 5px;
+        cursor: pointer;
+        box-shadow: none;
+    }
+}
