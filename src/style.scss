@@ -1,27 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 2%;
+    font-family: 'Quattrocento Sans', sans-serif;
+h1 {
+    padding-left: 4%;
+    font-size: 40px;
+    @media screen and (max-width: 430px) {
+        font-size: 25px;
+    }
+}
+
+p {
+    padding-right:4%;
+    font-size: 30px;
+    @media screen and (max-width: 430px) {
+        font-size: 20px;
+    }
+}
+}
+
+#root {
+    min-height: 100%;
+}
+
 
 body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: whitesmoke;
-    font-size: 30px;
     font-family: 'IM Fell Double Pica', serif;
+    height: 100%;
 }
 
-#root {
+.body-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+    @media screen and (max-width: 769px) {
+        font-size: 60px;
+    }
+    @media screen and (max-width: 430px) {
+        font-size: 45px;
+    }
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     // border:dotted 5px rgb(60, 60, 241);
+    justify-content: space-between;
+    min-height: 230px;
     align-items: center;
+    @media screen and (max-width: 769px) {
+        min-height: 350px;
+    }
+    @media screen and (max-width: 769px) {
+        min-height: 270px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .change-btn {
@@ -31,7 +94,7 @@ body {
     height: 35px;
     font-size: 20px;
     border-radius: 8px;
-    border: solid 5px rgb(60, 60, 241);
+    border: solid 5px rgb(91, 91, 250);
     box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.5);
     transition: .1s;
     &:hover {
@@ -39,5 +102,22 @@ body {
         left: 5px;
         cursor: pointer;
         box-shadow: none;
+    }
+    @media screen and (max-width: 769px) {
+        // position: absolute;
+        height: 45px;
+        max-width: 550px;
+        // margin-right: auto;
+        // margin-left: auto;
+        // bottom: 10%;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 1%;
+    p {
+        font-size: 25px;
     }
 }
